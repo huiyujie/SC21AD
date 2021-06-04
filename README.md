@@ -1,3 +1,17 @@
+# Dataset Preparing
+
+[KITTI](http://www.cvlibs.net/datasets/kitti/): Dataset for 3D object detection
+[PASCAL-VOC](http://host.robots.ox.ac.uk/pascal/VOC/): Dataset for 2D object detection
+[MSCOCO](https://cocodataset.org/#home): A large-scale object detection, segmentation, and captioning dataset.
+
+# Application Introduction
+
+3D object detection takes cloud points as the input. The input cloud points will be processed into a birds-eye-view(BEV) images and the images will be fed into trained neural networks. The objects on the processed images can be detected via the neural network, including cars, cyclists, and pedestrians. 
+
+# Overview of Hardware
+
+We deployed the 3D&2D object detection applications on NovuTensor and Nvidia Xavier, which are two Deep Learning acclerators. NovuTenosr is a PCIe-based acclerator, which needs cooperation with a host machine. Nvidia Xavier is an embedded module, which contains its own CPU, GPU, memory. 
+
 # To run the experiments that in the paper, three parts are included. 
 
 ## Experiments on NovuTesnor
